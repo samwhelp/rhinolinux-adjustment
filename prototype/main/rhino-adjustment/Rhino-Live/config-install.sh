@@ -76,6 +76,8 @@ xfce_config_install () {
 
 	xfce_config_install_by_dir
 
+	xfce_config_install_adjust_xdg_unicorn
+
 
 	echo
 
@@ -92,6 +94,22 @@ xfce_config_install_by_dir () {
 	echo
 	echo "cp -rf ./asset/overlay/etc/skel/. ${HOME}"
 	cp -rf "./asset/overlay/etc/skel/." "${HOME}"
+
+
+}
+
+
+xfce_config_install_adjust_xdg_unicorn () {
+
+
+	echo
+	echo sudo mkdir -p "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml"
+	sudo mkdir -p "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml"
+
+
+	echo
+	echo sudo install -Dm644 "./asset/overlay/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml" "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
+	sudo install -Dm644 "./asset/overlay/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml" "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
 
 
 }
