@@ -1,0 +1,6 @@
+
+[Icon Theme]
+Name=Default
+Comment=Default cursor theme
+Inherits=Quintom_Ink,Quintom_Snow,breeze_cursors,Breeze,Adwaita
+Size=24
