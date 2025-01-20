@@ -1,0 +1,58 @@
+
+
+##
+## # Xfce
+##
+
+
+
+
+##
+## ## Package / Tool
+##
+
+
+
+
+##
+## ## Package / Tool / Launcher
+##
+
+rofi
+
+
+
+
+##
+## ## Package / Tool / Terminal
+##
+
+xfce4-terminal
+sakura
+
+
+
+
+##
+## ## Package / Tool / File Manager
+##
+
+thunar
+
+
+
+
+##
+## ## Package / Tool / Text Editor
+##
+
+mousepad
+
+
+
+
+##
+## ## Package / Tool / Image Viewer
+##
+
+viewnior
