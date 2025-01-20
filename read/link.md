@@ -8,14 +8,18 @@ has_children: true
 # Link
 
 
+
+
 ## Rhino Linux
 
 | Link |
 | ---- |
-| [Rhino Linux](https://www.tromjaro.com/) |
-| SourceForge / [Rhino Linux](https://sourceforge.net/projects/rhino-linux-builder/)
+| [Rhino Linux](https://rhinolinux.org/) |
+| SourceForge / [Rhino Linux](https://sourceforge.net/projects/rhino-linux-builder/) / [Files](https://sourceforge.net/projects/rhino-linux-builder/files/) |
+| GitHub / [rhino-linux](https://github.com/rhino-linux/os/) |
+| GitHub / rhino-linux / [os](https://github.com/rhino-linux/os/) |
 
-* [Rhino Linux- Generic (x86_64) download mirrors](https://rhinolinux.org/mirrors/amd64.html)
+
 
 
 ## Just the Docs
