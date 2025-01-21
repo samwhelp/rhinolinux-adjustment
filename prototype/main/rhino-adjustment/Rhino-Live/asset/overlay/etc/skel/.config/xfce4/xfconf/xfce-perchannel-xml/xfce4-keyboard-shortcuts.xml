@@ -91,6 +91,11 @@
 			<property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter"/>
 			<property name="&lt;Alt&gt;w" type="string" value="wallpaper-select-xfce shuf_favorite"/>
 			<property name="&lt;Primary&gt;&lt;Alt&gt;w" type="string" value="wallpaper-select-xfce default"/>
+			<property name="&lt;Primary&gt;&lt;Alt&gt;p" type="string" value="xfce4-display-settings --minimal"/>
+			<property name="&lt;Super&gt;grave" type="string" value="lightpad"/>
+			<property name="&lt;Super&gt;Tab" type="string" value="xfdashboard"/>
+			<property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="gapplication launch io.ulauncher.Ulauncher"/>
+			<!-- <property name="&lt;Super&gt;Escape" type="string" value="gapplication launch io.ulauncher.Ulauncher"/> //-->
 		</property>
 	</property>
 	<property name="xfwm4" type="empty">
@@ -170,7 +175,7 @@
 			<property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Right" type="string" value="move_window_right_key"/>
 			<property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Left" type="string" value="move_window_left_key"/>
 			<property name="&lt;Alt&gt;F6" type="string" value="stick_window_key"/>
-			<property name="&lt;Super&gt;Tab" type="string" value="switch_window_key"/>
+			<property name="&lt;Alt&gt;Tab" type="string" value="switch_window_key"/>
 			<property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Up" type="string" value="move_window_up_key"/>
 			<property name="&lt;Alt&gt;Insert" type="string" value="add_workspace_key"/>
 			<property name="&lt;Alt&gt;Delete" type="string" value="del_workspace_key"/>

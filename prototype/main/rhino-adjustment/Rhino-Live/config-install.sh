@@ -107,9 +107,13 @@ xfce_config_install_adjust_xdg_unicorn () {
 	sudo mkdir -p "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml"
 
 
+	##
+	## ## unicorn desktop / set default keybind
+	##
+
 	echo
-	echo sudo install -Dm644 "./asset/overlay/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml" "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
-	sudo install -Dm644 "./asset/overlay/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml" "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
+	echo sudo install -Dm644 "./asset/overlay/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml" "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
+	sudo install -Dm644 "./asset/overlay/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml" "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
 
 
 }
