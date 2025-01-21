@@ -178,9 +178,10 @@ plank_config_install () {
 	plank_config_install_dock1_settings_item_clear
 
 
-
 	plank_config_install_dock1_launchers_item_add
 	plank_config_install_dock1_settings_item_add
+
+	plank_config_install_dock1_settings_property
 
 
 	return 0
@@ -197,7 +198,6 @@ plank_config_install_dock1_settings_item_clear () {
 	return 0
 }
 
-
 plank_config_install_dock1_settings_item_add () {
 
 
@@ -208,6 +208,23 @@ plank_config_install_dock1_settings_item_add () {
 
 	return 0
 }
+
+plank_config_install_dock1_settings_property () {
+
+
+	echo
+	echo gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ position "'bottom'"
+	gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ position "'bottom'"
+
+
+	echo
+	echo gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ hide-mode "'none'"
+	gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ hide-mode "'none'"
+
+
+	return 0
+}
+
 
 plank_config_install_dock1_launchers_item_clear () {
 
