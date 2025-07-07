@@ -78,6 +78,8 @@ xfce_config_install () {
 
 	xfce_config_install_adjust_xdg_unicorn
 
+	xfce_config_install_adjust_xdg_xfce4
+
 
 	echo
 
@@ -99,7 +101,7 @@ xfce_config_install_by_dir () {
 }
 
 
-xfce_config_install_adjust_xdg_unicorn () {
+xfce_config_install_adjust_xdg_unicorn_keybind () {
 
 
 	echo
@@ -114,6 +116,44 @@ xfce_config_install_adjust_xdg_unicorn () {
 	echo
 	echo sudo install -Dm644 "./asset/overlay/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml" "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
 	sudo install -Dm644 "./asset/overlay/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml" "/etc/xdg/xdg-unicorn/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
+
+
+}
+
+xfce_config_install_adjust_xdg_unicorn () {
+
+
+	echo
+	echo sudo mkdir -p "/etc/xdg"
+	sudo mkdir -p "/etc/xdg"
+
+
+	##
+	## ## override / xdg-unicorn-desktop
+	##
+
+	echo
+	echo sudo cp -rfT "./asset/overlay/etc/skel/.config/xfce4" "/etc/xdg/xdg-unicorn/xfce4"
+	sudo cp -rfT "./asset/overlay/etc/skel/.config/xfce4" "/etc/xdg/xdg-unicorn/xfce4"
+
+
+}
+
+xfce_config_install_adjust_xdg_xfce4 () {
+
+
+	echo
+	echo sudo mkdir -p "/etc/xdg"
+	sudo mkdir -p "/etc/xdg"
+
+
+	##
+	## ## override / xdg-xfce4
+	##
+
+	echo
+	echo sudo cp -rfT "./asset/overlay/etc/skel/.config/xfce4" "/etc/xdg/xfce4"
+	sudo cp -rfT "./asset/overlay/etc/skel/.config/xfce4" "/etc/xdg/xfce4"
 
 
 }
