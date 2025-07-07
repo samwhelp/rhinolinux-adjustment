@@ -35,8 +35,5 @@
 		<property name="CursorThemeName" type="string" value="Quintom_Ink"/>
 		<property name="CursorThemeSize" type="int" value="24"/>
 		<property name="DecorationLayout" type="empty"/>
-		<property name="ShellShowsMenubar" type="bool" value="true"/>
-		<property name="ShellShowsAppmenu" type="bool" value="true"/>
-		<property name="Modules" type="string" value="appmenu-gtk-module"/>
 	</property>
 </channel>
